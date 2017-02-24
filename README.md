@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: First find all potential twins by filtering boxes with exactly 2 possible values. For each such box, find if there exists a unit member (row, column, square, major or minor diagonal) among the potential twins list. If a twin is found, eliminate the values from all unit members except the twins.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Add two more units, a major diagonal and a minor diagonal. Once this is done, as the game constraint is respected across all units, the existing methods (eliminate, only_choice, reduce_puzzle and search) will automatically take care of the diagonal sudoku problem.
 
 ### Install
 
